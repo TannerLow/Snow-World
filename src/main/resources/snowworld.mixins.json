@@ -1,10 +1,13 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "%s.mixin",
+  "package": "io.github.TannerLow.snowworld.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "ExampleMixin"
+    "BiomeMixin",
+    "ExampleMixin",
+    "WorldMixin",
+    "GameRendererMixin"
   ],
   "server": [
   ],

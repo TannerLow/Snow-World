@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "%s",
+  "id": "snowworld",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Snow World",
+  "description": "Beta Snow Worlds!",
   "authors": [
-    "Me!"
+    "Baiohazado"
   ],
   "contact": {
     "homepage": "https://glass-launcher.net/",
@@ -14,12 +14,13 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/%s/icon.png",
+  "icon": "assets/snowworld/icon.png",
 
   "environment": "*",
+  "accessWidener": "snowworld.accesswidener",
   "entrypoints": {
     "stationapi:event_bus": [
-      "%s.events.init.InitListener"
+      "io.github.TannerLow.snowworld.events.init.InitListener"
     ],
     "stationapi:event_bus_client": [
     ],
@@ -27,7 +28,7 @@
     ]
   },
   "mixins": [
-    "%s.mixins.json"
+    "snowworld.mixins.json"
   ],
 
   "depends": {
